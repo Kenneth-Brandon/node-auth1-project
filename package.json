@@ -1,0 +1,19 @@
+{
+  "name": "auth1-project",
+  "version": "1.0.0",
+  "description": "Introduction to Authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenneth-Brandon/node-auth1-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenneth-Brandon/node-auth1-project/issues"
+  },
+  "homepage": "https://github.com/Kenneth-Brandon/node-auth1-project#readme"
+}
