@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/Kenneth-Brandon/node-auth1-project/issues"
   },
-  "homepage": "https://github.com/Kenneth-Brandon/node-auth1-project#readme"
+  "homepage": "https://github.com/Kenneth-Brandon/node-auth1-project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-session-knex": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^3.22.0",
+    "knex": "^0.21.1",
+    "knex-cleaner": "^1.3.0",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
