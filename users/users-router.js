@@ -1,13 +1,21 @@
-const router = require('express').Router();
+const express = require('express');
+const UsersDB = require('./users-model.js');
+const bcrypt = require('bcryptjs');
+const RestMidd = require('../auth/restricted-middleware');
+const router = express.Router();
 
-const Users = require('./users-model');
+router.use((req, res, next) => {
+  console.log('\nUsers Router Used');
+  next();
+});
 
-router.get('/', async (req, res) => {
-  Users.find()
-    .then((users) => {
-      res.json(users);
-    })
-    .catch((err) => res.send(err));
+router.get('/', RestMidd, async (req, res) => {
+  try {
+    const users = await UsersDB.find();
+    res.status(200).json(users);
+  } catch (err) {
+    res.status(500).json({ error: 'Server error', err: err });
+  }
 });
 
 module.exports = router;
